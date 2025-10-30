@@ -76,7 +76,9 @@ const PlugIcon = () => (
 
 // --- MENU ITEMS ---
 const navItems: NavItem[] = [
-  { icon: <DashboardIcon />, name: "Dashboard", subItems: [{ name: "Main Dashboard", path: "/" }] },
+    { icon: <DashboardIcon />, name: "Dashboard", path: "/" },
+
+  //{ icon: <DashboardIcon />, name: "Dashboard", subItems: [{ name: "Main Dashboard", path: "/" }] },
    { icon: <TableIcon />, name: "Products", path: "/products" },
   { icon: <ListIcon />, name: "Add Product", path: "/add-product" },
   { icon: <ChartIcon />, name: "Analytics", path: "/analytics" },

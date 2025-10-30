@@ -1,27 +1,4 @@
-/*
-Altibbe Health - Hedamo Product Transparency Dashboard
-Single-file React component & starter scaffold intended for Next.js + Tailwind projects.
 
-How to use:
-1) Create a Next.js app (or React app) and install Tailwind CSS per the official guide.
-2) Save this file as `components/HedamoDashboard.jsx` and import it into a page (e.g. pages/index.js).
-3) Optional: install framer-motion for smooth animations: `npm i framer-motion`.
-
-What this file contains:
-- Responsive layout with sidebar and top nav
-- Product table with color-coded transparency scores and filters
-- Click-through product detail panel with radial progress gauge, AI explanation, suggestions, and flags
-- Multi-step product submission wizard (mocked) with AI feedback on submit
-- Dark mode toggle
-
-This is a self-contained UI demo using mocked fetch calls (setTimeout) and local JSON-style data.
-
-Notes for grading / extension:
-- Replace mocked fetch with real API endpoints or Next.js API routes under /pages/api
-- Add tests, route-based code splitting, and server-side rendering as needed
-- Deploy to Vercel: connect the repo -> push -> Vercel auto-deploy
-
-*/
 "use client"
 import React, { useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -452,41 +429,3 @@ function Wizard({ onClose, onSubmit }) {
     </div>
   )
 }
-
-/*
-README / Deployment Checklist (copy to your repo README)
-
-# Hedamo Product Transparency Dashboard (Frontend)
-
-A responsive React/Next.js + Tailwind CSS demo for the Altibbe Health frontend assignment.
-
-Features:
-- Responsive dashboard UI with sidebar and top nav
-- Product list with sortable/filtered table and color-coded scores
-- Product detail view with radial gauge, AI suggestions, and flags
-- Wizard-style multi-step product submission with mocked AI feedback
-- Dark mode and framer-motion animations (optional)
-
-Local setup:
-1. Create a Next.js app: `npx create-next-app hedamo-dashboard`
-2. Install Tailwind: follow https://tailwindcss.com/docs/guides/nextjs
-3. Install framer-motion: `npm i framer-motion`
-4. Add this component to `components/HedamoDashboard.jsx` and import in `pages/index.js`:
-   `import HedamoDashboard from '../components/HedamoDashboard'` and render it.
-5. Start dev server: `npm run dev`
-
-Deployment:
-- Push to GitHub and connect the repository to Vercel. Vercel will auto-deploy the Next.js app.
-
-Design notes:
-- Keep components modular (split RadialProgress, Wizard, ProductTable into separate files for production)
-- Replace mock fetch with Next.js API routes or external API gateway
-- Add unit + e2e tests, accessibility checks, and Lighthouse performance tuning
-
-Deliverables you should push to GitHub:
-- Source code (components + pages)
-- README with setup & design choices
-- Screenshots in `/screenshots`
-- Vercel deployment link in README
-
-*/

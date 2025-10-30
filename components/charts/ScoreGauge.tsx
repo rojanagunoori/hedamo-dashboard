@@ -40,11 +40,14 @@ export default function ScoreGauge({ score }: ScoreGaugeProps) {
               angleAxisId={0}
               tick={false}
             />
+            
             <RadialBar
-              minAngle={15}
-              clockWise
-              dataKey="value"
-              cornerRadius={10}
+              {...({
+    minAngle: 15,
+    clockWise: true,
+    dataKey: "value",
+    cornerRadius: 10,
+  } as any)}
             />
           </RadialBarChart>
         </ResponsiveContainer>
